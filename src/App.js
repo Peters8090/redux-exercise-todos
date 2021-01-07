@@ -1,8 +1,8 @@
 import {useDispatch, useSelector} from 'react-redux'
 import {allTodos} from './redux/selectors/todoSelectors'
 import {addTodo, loadTodos, removeTodo} from './redux/actions/todoActions'
-import {useEffect, useState} from 'react'
 import './App.css'
+import {useEffect, useState} from 'react'
 
 export const App = () => {
     const todos = useSelector(allTodos)
